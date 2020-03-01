@@ -27,6 +27,7 @@ h2 {
     
     background-color: #fff;
 }
+
 .container {
     
     padding: 60px;
@@ -60,7 +61,40 @@ input {
 }
 
 .btn-erase {
-    position: relative;
-    right: 80px;
+    margin-top: 10px;
+} 
+
+.block {
+    display: inline-block;
+
 }
+
+/* I was having issues trying to make the input with id "newPassword" responsive */
+
+@media screen and (max-width: 500px) {
+    .newPassword {
+        width: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+    .block {
+        margin-left: -40px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+    .block {
+        margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+    .block {
+        margin-left: 200px;
+  }
+}
+
+
+
 
